@@ -21,8 +21,7 @@ class EnumHandlerFactory implements HandlerFactoryInterface
     public function addConfiguration(ArrayNodeDefinition $builder)
     {
         $builder
-            ->addDefaultsIfNotSet()
-            ->defaultValue(array());
+            ->addDefaultsIfNotSet();
     }
 
     public function getType(array $config)
